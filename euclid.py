@@ -18,11 +18,13 @@ while( r != 0 ):
     a = b
     b = r
     i += 1
-    
-print('GCD=',a)
+gcd = a    
 
-b = b2 / a
-a = a2 / a
+print('GCD=',gcd)
+
+a = a2 / gcd
+b = b2 / gcd
+
 x = 1
 r = 0  #  次のループを動かすための0代入
 
@@ -34,3 +36,4 @@ y = (1 - a * x ) / b
 
 print('x0 =',x)
 print('y0 =','{:.0f}'.format(y))
+print('x = {0} + {1}t, y = {2} - {3}t'.format(x,b,y,a))
