@@ -1,3 +1,5 @@
+import time
+
 print('ax + bx = gcd(a,b)')
 
 a = int(input('a='))
@@ -5,6 +7,8 @@ b = int(input('b='))
 a_o = a  #  aの初期値保管用
 b_o = b  #  bの初期値保管用
 swap_flag = 0
+
+start = time.time()
 
 if( b > a ):
     tmp = a
@@ -57,3 +61,6 @@ if( swap_flag == 0):  #  a,bを入れ替えたかどうかの場合分け
 else:
     print('x0 = {0}, y0 = {1}'.format(y, x))
     print('x = {0} - {1}t, y = {2} + {3}t\n'.format(y, b, x, a))
+
+process_time = time.time() - start
+print(process_time,'sec')
