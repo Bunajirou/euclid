@@ -26,8 +26,8 @@ gcd = a
 
 print('GCD=',gcd)
 
-a = a2 / gcd
-b = b2 / gcd
+a = a2 // gcd
+b = b2 // gcd
 
 x = 1
 r = 0  #  次のループを動かすための0代入
@@ -37,7 +37,7 @@ while( r != 1 ):
     r = (a * x) % b
     print('running...')
     
-y = (1 - a * x ) / b
+y = (1 - a * x ) // b
 
 print('x0 =',x)
 print('y0 =','{:.0f}'.format(y))
