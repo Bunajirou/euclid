@@ -35,12 +35,11 @@ r = 0  #  次のループを動かすための0代入
 while( r != 1 ):
     x += 1
     r = (a * x) % b
-    print('running...')
     
-y = (1 - a * x ) // b
+y =(1 - a * x ) // b
 
 print('x0 =',x)
-print('y0 =','{:.0f}'.format(y))
+print('y0 =',y)
 print('x = {0} + {1}t, y = {2} - {3}t'.format(x,b,y,a))
 
 process_time = time.time() - start
