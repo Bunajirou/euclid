@@ -35,6 +35,7 @@ r = 0  #  次のループを動かすための0代入
 while( r != 1 ):
     x += 1
     r = (a * x) % b
+    print('running...')
     
 y =(1 - a * x ) // b
 
