@@ -42,7 +42,7 @@ x3 = 1
 
 for j in range(n, 0, -1):  #  ユークリッドの互除法を遡る
     x1 = x1 * qlist[j-1] + x3
-    print(x1,x2,x3)
+    print(x1,x2,x3,' q=',qlist[j-1])
     tmp = x2
     x2 = x1
     x3 = tmp
