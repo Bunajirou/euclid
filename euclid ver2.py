@@ -2,8 +2,8 @@ print('ax + bx = gcd(a,b)')
 
 a = int(input('a='))
 b = int(input('b='))
-a_o = a  #  ax + bx = gcd(1a,b)を出力するためにおいてあるけど
-b_o = b  #  正直なところ邪魔でしかない
+a_o = a  
+b_o = b  
 swap_flag = 0
 
 if( b > a ):
