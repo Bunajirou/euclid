@@ -36,15 +36,22 @@ gcd = a
 print('GCD=',gcd,'\n')
 
 n = i - 2
-y = qlist[n]
-x2 = y
-x = 1
+x1 = qlist[n]
+x2 = x1
+x3 = 1
 
 for j in range(n, 0, -1):  #  ユークリッドの互除法を遡る
-    y = y * qlist[j-1] + x
+    x1 = x1 * qlist[j-1] + x3
+    print(x1,x2,x3,' q=',qlist[j-1])
     tmp = x2
-    x2 = y
-    x = tmp
+    x2 = x1
+    x3 = tmp
+
+print('')
+print(qlist)
+
+x = x3
+y = x1
 
 a = a_o // gcd
 b = b_o // gcd
